@@ -12,6 +12,7 @@
         
         <!-- Styles -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/social.css">
         <link rel="stylesheet" href="assets/css/style.css">
         
         <!-- Font Awesome -->
@@ -19,11 +20,14 @@
         
         <title>Goldiriath</title>
     </head>
+
     <body>
+        <!-- Backround -->
         <div id="background">
             <img src="assets/img/background2.png" class="stretch" alt="" />
         </div>
     
+        <!-- Top navigation -->   
         <nav id="topnav" class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <ul class="nav navbar-nav">
@@ -52,87 +56,173 @@
         <br />
         <br />
         
+        <!-- Title -->
         <div class="container">
             <h1 id="title">Goldiriath<h1>
             <h2 id="subtitle">A Minecraft RPG</h2>
         </div>
         
+        <!-- Bottom navigation -->
         <div class="container">
-            <nav id="bottomnav" class="navbar navbar-default">
+            <nav id="go-bottomnav" class="navbar navbar-default">
                 <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                </div>
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                    </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a id="navactive" href="">News <span class="sr-only">(current)</span></a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="lore">Lore</a></li>
-                        <!--<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdewn <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">But, why?</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a id="navactive" href="">News <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="lore">Lore</a></li>
+                            <!--<li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdewn <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">But, why?</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a>
+                                </li>
+                            </ul>-->
                             </li>
-                        </ul>-->
-                        </li>
-                    </ul>
+                        </ul>
 
-                    <ul id="navip" class="nav navbar-nav navbar-right">
-                        <p id="server-address" class="navbar-text">IP Coming not so soon. :D</p>
-                    </ul>
+                        <ul id="navip" class="nav navbar-nav navbar-right">
+                            <p id="server-address" class="navbar-text">IP Coming not so soon. :D</p>
+                        </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
         
+        <!-- Content -->
         <div class="container">
-            <div class="panel panel-default" id="content">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-sm-4 col-md-4">
-                            <div class="thumbnail contentitem">
-                                <img src="assets/img/default.png" alt="">
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>...</p>
+            <div class="panel panel-default go-content"><div class="panel-body">
+                <div class="row">
+                
+                    <!-- Carousel -->
+                    <div class="col-sm-9 col-md-9">
+                        <div id="go-carousel" class="carousel slide">
+
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="item active">
+                                    <img src="assets/img/slides/slide1.png" alt="slide1">
+                                    <div class="carousel-caption">Amazing terrain</div>
                                 </div>
+
+                                <div class="item">
+                                    <img src="assets/img/slides/slide2.png" alt="slide2">
+                                    <div class="carousel-caption">Lovely mountains</div>
+                                </div>
+
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <div class="col-sm-3 col-md-3">
+                        <div class="panel panel-default go-sidebar-panel">
+                            <div class="panel-body">
+                                <a href="#" id="go-join-button" class="btn btn-block btn-lg btn-info">Sign up now</a>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-4">
-                            <div class="thumbnail contentitem">
-                                <img src="assets/img/default.png" alt="">
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>...</p>
-                                </div>
+                        <div class="panel panel-default go-sidebar-panel">
+                            <div class="panel-heading"><h3 class="panel-title">Social Media</h3></div>
+                            <div class="panel-body">
+                                <ul class="social-icons icon-circle list-unstyled list-inline"> 
+                                    <li><a href="https://github.com/Goldiriath"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-md-4">
-                            <div class="thumbnail contentitem">
-                                <img src="assets/img/default.png" alt="">
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>...</p>
-                                </div>
+                        <div class="panel panel-default go-sidebar-panel">
+                            <div class="panel-heading"><h3 class="panel-title">Donate</h3></div>
+                            <div class="panel-body go-donation">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <p>
+                                    If you like what we are doing, and wish to support us, please do so by donating below.
+                                    </p>
+                                    <input type="hidden" name="cmd" value="_donations" />
+                                    <input type="hidden" name="item_name" value="Donation" />
+                                    <input type="hidden" name="business" value="goldiriath@gmail.com" />
+                                    <input type="hidden" name="currency_code" value="USD" />
+                                    <div class="form-group">
+                                    <label for="go-donate-amount">Amount</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" id="go-donate-amount" class="form-control" placeholder="5" name="amount" required />
+                                            <div class="input-group-addon">.00</div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-info">Donate with paypal</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            
+            <div class="panel panel-default go-content"><div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail contentitem">
+                            <img src="assets/img/default.png" alt="">
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+                                <p>...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail contentitem">
+                            <img src="assets/img/default.png" alt="">
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+                                <p>...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="thumbnail contentitem">
+                            <img src="assets/img/default.png" alt="">
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+                                <p>...</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div></div>
         
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
